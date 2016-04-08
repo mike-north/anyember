@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="col s12">
+
+{{#md-card title='Organizations' as |c|}}
+  {{#c.content}}
+    {{#md-collection as |c|}}
+      {{#each model as |org|}}
+      {{c.link-to org.name 'org.repos' org.id}}
+      {{/each}}
+    {{/md-collection}}
+  {{/c.content}}
+{{/md-card}}
+
+
+
+    </div>
+  </div>
+</div>

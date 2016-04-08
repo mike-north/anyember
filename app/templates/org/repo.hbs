@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row">
+    <div class="col s12">
+{{#md-card title=(concat org.name ' / ' model.name) as |crd|}}
+  {{#crd.content}}
+    <p><i class="material-icons">star</i>{{model.stargazersCount}}</p>
+  {{/crd.content}}
+{{/md-card}}
+
+
+
+</div></div></div>
