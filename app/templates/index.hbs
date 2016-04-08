@@ -6,7 +6,10 @@
   {{#c.content}}
     {{#md-collection as |c|}}
       {{#each model as |org|}}
-      {{c.link-to org.name 'org.repos' org.id}}
+      {{#c.link-to 'org.repos' org.id class='avatar'}}
+        <img src={{org.iconUrl}} alt="" class='circle'>
+        <span class="title">{{org.name}}</span>
+      {{/c.link-to}}
       {{/each}}
     {{/md-collection}}
   {{/c.content}}
